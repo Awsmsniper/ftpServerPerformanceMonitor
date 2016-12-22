@@ -1,6 +1,7 @@
 package org.after90.component;
 
 import lombok.extern.slf4j.Slf4j;
+import org.after90.service.FtpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
@@ -14,7 +15,8 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Order(value = 1)
 public class StartRunnerComponent implements CommandLineRunner {
-
+    @Autowired
+    private FtpService ftp;
 
     @Override
     public void run(String... args) throws Exception {
@@ -22,7 +24,7 @@ public class StartRunnerComponent implements CommandLineRunner {
         new Thread() {
             @Override
             public void run() {
-                //
+                ftp.doTest();
             }
         }.start();
         log.info("end init");
