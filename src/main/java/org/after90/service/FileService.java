@@ -13,7 +13,12 @@ import java.io.RandomAccessFile;
 @Service
 @Slf4j
 public class FileService {
-
+    /**
+     * 生成一个追定文件名、指定文件大小的文件
+     *
+     * @param strFilePath
+     * @param lLength
+     */
     public void makeFile(String strFilePath, long lLength) {
         RandomAccessFile raf = null;
         try {

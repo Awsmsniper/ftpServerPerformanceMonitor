@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
+ * ftp操作相关服务
  * Created by zhaogj on 22/12/2016.
  */
 @Service
