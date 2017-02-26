@@ -10,4 +10,4 @@ reverse_lookup_enable=NO
 ／etc/init.d/vsftp restart
 
 #文档
-[ftp服务性能监测](http://zgj0315.github.io//diary/2017/02/26/ftp_server_performance_monitor.html)
+[ftp服务性能监测](http://zgj0315.github.io/diary/2017/02/26/ftp_server_performance_monitor.html)
